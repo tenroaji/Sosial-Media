@@ -54,14 +54,14 @@ class MainActivity : AppCompatActivity() {
         //google
         mAuth = FirebaseAuth.getInstance()
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-            .requestIdToken("1060952712888-3q2nqbm16j1jouepjcs1ahv26g4tfvl4.apps.googleusercontent.com")
+//            .requestIdToken("1060952712888-3q2nqbm16j1jouepjcs1ahv26g4tfvl4.apps.googleusercontent.com")
             .requestEmail()
             .build()
 
          mGoogleSignInClient = GoogleSignIn.getClient(this, gso)
 
         btnLoginGoogle.setOnClickListener {
-//            signInGoogle()
+            signInGoogle()
 //            firebaseAuthWithGoogle()
         }
 
